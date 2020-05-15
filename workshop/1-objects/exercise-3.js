@@ -3,8 +3,8 @@
 
 const staffMembers = [
   {
-    name: 'Jane Smith',
-    title: 'Web Developer II',
+    name: "Jane Smith",
+    title: "Web Developer II",
     skillLevels: {
       javascript: 7,
       python: 4,
@@ -12,8 +12,8 @@ const staffMembers = [
     },
   },
   {
-    name: 'Frank Castle',
-    title: 'Web Developer I',
+    name: "Frank Castle",
+    title: "Web Developer I",
     skillLevels: {
       javascript: 4,
       python: 4,
@@ -21,8 +21,8 @@ const staffMembers = [
     },
   },
   {
-    name: 'Steve Rogers',
-    title: 'Database Admin',
+    name: "Steve Rogers",
+    title: "Database Admin",
     skillLevels: {
       javascript: 7,
       python: 4,
@@ -30,8 +30,8 @@ const staffMembers = [
     },
   },
   {
-    name: 'Chuck Taylor',
-    title: 'Web Developer III',
+    name: "Chuck Taylor",
+    title: "Web Developer III",
     skillLevels: {
       javascript: 8,
       python: 7,
@@ -39,8 +39,8 @@ const staffMembers = [
     },
   },
   {
-    name: 'Thor Odinson',
-    title: 'Web Intern',
+    name: "Thor Odinson",
+    title: "Web Intern",
     skillLevels: {
       javascript: 4,
       python: 3,
@@ -53,3 +53,8 @@ const staffMembers = [
 // Write a line that will print the JavaScript level for employee Chuck Taylor.
 
 // You will need both Array and Object syntax.
+let personToFind = "Chuck Taylor";
+let person = staffMembers.find((obj) => obj.name === personToFind);
+console.log(
+  person.name + ", JavaScript Ability: " + person.skillLevels.javascript
+);

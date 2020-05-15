@@ -1,7 +1,7 @@
 // Exercise 2
 // -------------------
 
-const myKey = 'width';
+const myKey = "width";
 
 const geometry = {
   length: 20,
@@ -18,3 +18,4 @@ const geometry = {
 //
 // Use that variable to look up the specified property in the `geometry` object.
 // Log it to the console:
+geometry[myKey];
